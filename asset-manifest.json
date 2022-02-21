@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-02-feedback-components-40/static/css/main.eef52051.css",
+    "main.js": "/goit-react-hw-02-feedback-components-40/static/js/main.496cf50f.js",
+    "static/media/img.jpg": "/goit-react-hw-02-feedback-components-40/static/media/img.cd585c0afc43b333445c.jpg",
+    "index.html": "/goit-react-hw-02-feedback-components-40/index.html",
+    "main.eef52051.css.map": "/goit-react-hw-02-feedback-components-40/static/css/main.eef52051.css.map",
+    "main.496cf50f.js.map": "/goit-react-hw-02-feedback-components-40/static/js/main.496cf50f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eef52051.css",
+    "static/js/main.496cf50f.js"
+  ]
+}
