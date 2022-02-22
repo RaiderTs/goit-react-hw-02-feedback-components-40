@@ -14,11 +14,11 @@ class App extends React.Component {
   };
 
   handleClick = feedback => {
-    const buttonNameNormalize = feedback.toLowerCase().trim();
+    const feedbackNormalize = feedback.toLowerCase().trim();
     this.setState(prevState => {
       return {
         ...prevState.state,
-        [buttonNameNormalize]: prevState[buttonNameNormalize] + 1,
+        [feedbackNormalize]: prevState[feedbackNormalize] + 1,
       };
     });
     swal({
