@@ -4,12 +4,7 @@ import Section from './components/Section';
 import Statistics from './components/Statistics';
 import { titles } from './data/titles';
 import swal from 'sweetalert';
-import styled from '@emotion/styled';
 import './App.css';
-
-const Div = styled.div`
-  padding-top: 3%;
-`;
 
 class App extends React.Component {
   state = {
@@ -18,9 +13,8 @@ class App extends React.Component {
     bad: 0,
   };
 
-  handleClick = ({ target }) => {
-    const { button } = target.dataset;
-    const buttonNameNormalize = button.toLowerCase().trim();
+  handleClick = feedback => {
+    const buttonNameNormalize = feedback.toLowerCase().trim();
     this.setState(prevState => {
       return {
         ...prevState.state,
@@ -51,7 +45,7 @@ class App extends React.Component {
     const positiveFeedback = this.countPositiveFeedbackPercentage();
 
     return (
-      <Div>
+      <div className="mainContainer">
         <Section title="Please leave feedback">
           <FeedbackOptions
             buttonsNames={titles}
@@ -67,7 +61,7 @@ class App extends React.Component {
             positivePercentage={positiveFeedback}
           />
         </Section>
-      </Div>
+      </div>
     );
   }
 }
